@@ -1,0 +1,22 @@
+﻿<Window x:Class="HW9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="String Operations" Height="350" Width="525">
+    <Grid>
+        <StackPanel Margin="10">
+            <Grid>
+                <TextBox x:Name="InputTextBoxSplitWords" Width="400" Height="30" />
+            </Grid>
+
+            <Button Content="Разделить на слова" Width="150" Margin="0,5,0,5" Click="OnSplitWordsButtonClick"/>
+            <ListBox x:Name="WordsListBox" Width="400" Height="100"/>
+
+            <Grid>
+                <TextBox x:Name="InputTextBoxReverseWords" Width="400" Height="30"/>
+            </Grid>
+
+            <Button Content="Переставить слова" Width="150" Margin="0,5,0,5" Click="OnReverseWordsButtonClick"/>
+            <Label x:Name="ReversedSentenceLabel" Width="400" Height="30" Content="Результат перестановки появится здесь" />
+        </StackPanel>
+    </Grid>
+</Window>
